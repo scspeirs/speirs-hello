@@ -21,7 +21,32 @@ Speirs: product manager, creative person, and smart cookie.">
     <li>I initially started out with the tutorial on the PCF website, which was a very helpful into into the process. It was very simple and intuitive to understand how to use the CLI, where to find available commands, and push the app.
     <li>I ran into an initial problem in the tutorial when it wasn't entirely clear that I needed to log into my PWS account and set up a space to target. However, upon logging into the interface it was relatively intuitive to create the space and then to subsequently target it in the CLI.
     <li>In the first tutorial, I played around with scaling (memory and instances) and adding a database service using the command line.
-    <li>For this sample app, I opted to try out creating a manifest.yml to set the PCF configurations. 
-  <a href src="https://www.linkedin.com/in/shaughnessyspeirs/">Find Me on LinkedIn</a>
-  <a href src="https://github.com/scspeirs/speirs-hello">This Project on Github</a>
+    <li>For this sample app, I opted to try out creating a manifest.yml to set the PCF configurations - love not having to type the app name every time!
+  </ul>
+  <h3>Measuring Developer Happiness</h3>
+  <p>Employee engagement, happiness, and productivity are finicky measures no matter the job. The 90-Day Roadmap for addressing these needs would need to start with a discovery to talk with engineers and understand what they love and hate in their jobs and what they look for in their development tools. I would look for patterns in feedback in initial discussions with customers to try to surface the problems that represent the highest degree of pain.</p>
+  <p>For the purpose of this exercise, having gone through the process of pushing an app using the CLI, I noticed that there is some repetitive process that could be addressed by offering a more interactive experience with PCF. I analogize this to my experience using the interactive Ruby shell on apps at MojoTech. With this interactive shell, you could type a command with an app name, be dropped into an interactive environment, and execute commands or run tasks on that app without being required to specify 'cf' or 'app name' in commands repetitively.</p>
+  <ul>
+    <li>A simple and cheap way to begin to measure satisfaction with the platform would be to begin conducting net promoter score surveys. This would not replace qualitative research directly with engineers but would instead help guide activities and focus by taking the temperature of the customer base.
+    <li>The speed with which one can successfully deploy apps without having to worry about managing configuration details every time constitutes a large share of the value proposition, and I know engineers are at their happiest when solving new challenges more than managing repetitive tasks. To understand how well the product solves this, I would look for ways to understand how quickly devs can deploy an app with their preferred configurations. This could be done by observing the process directly, with questions like this in mind: How quickly is the dev able to find what she needs? Does he know how to find answers to things he is not familiar with? Do they use features like manifest files to speed up their process?
+    <li>Productivity could be measured both qualitatively by asking devs themselves how well they feel their time is spent and quantitatively by examining deployment activity to understand how effectively they can manage the process. How well do deployments go? How often do they fail? When a deployment fails, how quickly are they able to resolve it? Are they making use of services offered in Cloud Foundry to get the most out of the power of the platform?
+    <li>Productivity could also be measured in support volume. The hypothesis is that devs would rather not spend time on support inquiries and that thorough documentation and intuitive problem-solving helps empower devs to work more productively and effectively, and makes for happier devs overall. If support requests in a feature area decline, or if the mean time to resolution declines, it means the dev has more time to engage in building software, which would be a lead measure for  productivity.
+    </ul>
+  <h3>Some Sample User Stories (With big assumptions that these functions are not available already!)</h3>
+  <ul>
+    <li>As a developer, I want to specify that subsequent commands are intended for Cloud Foundry so that I no longer need to type 'cf' for every command.
+    <li>As a developer, I want to specify that subsequent commands are intended for an app I specify so that I no longer need to type the app name for every command.
+    <li>As a developer, I want to give a command to switch to a different app for subsequent commands so that I can continue to make configurations for other apps without having to restart the shell.
+    <li>As a developer, I want to give a command to specify that I am no longer working with Cloud Foundry so that I can easily switch to other work when I am finished.
+    <li>As a developer, I want to keep a log of the commands I use in the Cloud Foundry 'shell' so that I might use it to later create a manifest if I choose to.
+  </ul>
+  <h3>Prioritization among other work</h3>
+  <ul>
+    <li>Source Code Management: A git/Github integration or integration with other source control tools represents potential streamlining of developer workflow in the form of both faster manual tasks and automated tasks. I believe this represents the largest value-add for developers for the tradeoff in complexity.</li>
+    <li>Interactive Shell: A way to simplify manual deployment processes when developers do want finer, more real-time control over configurations could speed up deployments and changes in scaling, and my intuition is that it would add value greater than the investment in complexity. </li>
+    <li>Persistent Disk Storage: This is a challenge that has been present in moving toward cloud native development for a long time, and solving it has the potential to be market-creating for customers wanting to move legacy apps into cloud-native technologies. However, given that it has some inherent complexity and that some value has been gained here through containerization, my feeling is that it doesn't hold the 'quick win' potential of features like source code management and an interactive shell.</li>
+    <li>Security vulnerability tracking: This seems like a very handy utility, but it is one that developers currently have options for handling outside of PCF, and I don't get the sense that it represents a feature that would 'make or break' a decision to use PCF. For this reason, I placed it last on the list of priorities.</li>
+  </ul>
+  <a href="https://www.linkedin.com/in/shaughnessyspeirs/">Find Me on LinkedIn</a>
+  <a href="https://github.com/scspeirs/speirs-hello">This Project on Github</a>
 </div>
