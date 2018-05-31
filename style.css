@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Montserrat|Playfair+Display|Raleway|Roboto+Slab:100');
 
 a {
-  text-decoration: none;
   padding: 10px;
 }
 
 a:hover {
   padding:10px;
-  color:white;
+  color:#ff006e;
 }
 
 body {
