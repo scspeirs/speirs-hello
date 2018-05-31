@@ -28,12 +28,12 @@ h3 {
 }
 
 p {
-  padding: 5px;
+  padding-bottom:5px;
 }
 
 .container {
   display: flex;
   justify-content:center;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
 }
